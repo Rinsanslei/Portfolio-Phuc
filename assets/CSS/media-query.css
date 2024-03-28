@@ -1,0 +1,157 @@
+@media screen and (min-width:1440px) {
+    h1 {
+        font-size: 377px;
+    }
+
+    .racoon {
+        max-width: 348px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    a {
+        font-size: 18px;
+    }
+
+    h4::after {
+        bottom: -32px;
+    }
+
+    .racoon {
+        position: absolute;
+        left: 100%;
+        top: 60%;
+        transform: translate(-15%, -52%);
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 30% 1fr 1fr;
+    }
+
+    .description {
+        justify-self: end;
+        margin-right: 10%;
+    }
+
+    .about h2 {
+        position: absolute;
+        right: -64px;
+        top: 33%;
+        margin-bottom: 0;
+        font-size: 74px;
+        transform: rotate(-90deg);
+        font-weight: 100;
+    }
+
+    .about h3 {
+        font-size: 42px;
+    }
+
+    .about p {
+        font-size: 14px;
+        max-width: 200px;
+    }
+
+    .more {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "fo sk sm"
+            "xp xp xp";
+        column-gap: 32px;
+        row-gap: 80px;
+    }
+
+    .more h2 {
+        position: absolute;
+        right: -12px;
+        top: 60%;
+        margin-bottom: 0;
+        font-size: 74px;
+        transform: rotate(-90deg);
+        font-weight: 100;
+    }
+
+    .formations {
+        grid-area: fo;
+    }
+
+    .skills {
+        grid-area: sk;
+    }
+
+    .links {
+        grid-area: sm;
+    }
+
+    .experiences {
+        grid-area: xp;
+        width: 70%;
+    }
+
+    article h4 {
+        font-size: 36px;
+    }
+
+    article ul {
+        margin-left: 0;
+    }
+
+    .skills ul {
+        row-gap: 4px;
+    }
+
+    .experiences ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: 64px;
+    }
+
+    .experiences ul li {
+        max-width: 480px;
+    }
+
+    .projects {
+        width: unset;
+        margin-left: 6.25%;
+        padding-right: 6.25%;
+    }
+
+    .projects ul {
+        margin: 0 auto 24px;
+        width: 100%;
+    }
+
+    .projects img {
+        max-width: 1435px;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .projects p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:660px) {
+    .projects ul li::before {
+        font-size: 22px;
+        top: 50%;
+    }
+
+
+    .projects ul li::after {
+        font-size: 14px;
+        max-width: 140px;
+        top: 55%;
+    }
+}

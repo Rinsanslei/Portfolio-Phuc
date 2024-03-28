@@ -1,0 +1,48 @@
+/* *****************************************FOOTER**************************************** */
+
+footer {
+    position: relative;
+    background-color: #242423;
+    color: white;
+    padding: 48px 6.25% 16px;
+    font-size: 14px;
+    transform: translateY(100vh);
+
+}
+
+footer p {
+    margin-bottom: 32px;
+}
+
+footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-links {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links img {
+    max-width: 32px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width:768px) {
+    footer {
+        display: flex;
+        column-gap: 5%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    .footer-links img {
+        margin-bottom: 0;
+    }
+}

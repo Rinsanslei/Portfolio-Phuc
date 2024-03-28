@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Nighty DEMO";
+    src: url("../../medias/font/Nighty\ DEMO.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Helvetica Compressed";
+    src: url("../../medias/font/Helvetica\ Compressed\ Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Helvetica Compressed";
+    src: url("../../medias/font/Helvetica\ Compressed\ Regular.otf") format("opentype");
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: #FFF5D5;
+    background-color: #5D7052;
+    font-family: "inter", sans-serif;
+}
+
+
+.container {
+    margin-left: 6.25%;
+    padding-right: 6.25%;
+    max-width: 1440px;
+    transform: translateY(100vh);
+    background-color: #5D7052;
+}
+
+
+a {
+    font-size: 14px;
+    color: #FFF5D5;
+}
+
+h4 {
+    position: relative;
+    font-family: "Nighty Demo";
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFC700;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+    width: fit-content;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    background: url(../../medias/shape\ h4.svg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.yellow-text {
+    color: #FFC700;
+}
+
+/* *****************************************HEADER************************************ */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 28px 6.25% 14px 0;
+    z-index: 100;
+}
+
+.burger-menu {
+    width: 46px;
+    height: 13.66px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar.visible {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0));
+}
+
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 60px;
+    height: 100%;
+    padding: 10% 0;
+    backdrop-filter: blur(20px);
+}
+
+.navbar ul li {
+    text-align: center;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .burger-menu {
+        width: 70px;
+        height: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 28px;
+    }
+}
