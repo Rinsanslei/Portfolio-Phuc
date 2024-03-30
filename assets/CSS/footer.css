@@ -25,7 +25,7 @@ footer a {
 }
 
 .footer-links {
-    width: 33%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -45,6 +45,10 @@ footer a {
 
     footer p {
         margin-bottom: 0;
+    }
+
+    .footer-links {
+        width: 30%;
     }
 
     .footer-links img {

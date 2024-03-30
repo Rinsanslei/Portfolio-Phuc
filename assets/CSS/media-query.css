@@ -35,7 +35,7 @@
 
     .about {
         display: grid;
-        grid-template-columns: 35% auto 1fr;
+        grid-template-columns: 30% auto 1fr;
         column-gap: 5%;
     }
 
@@ -73,12 +73,12 @@
     .more {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 30% auto 1fr;
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
             "fo sk sm"
             "xp xp xp";
-        column-gap: 10%;
+        column-gap: 5%;
         row-gap: 80px;
     }
 
