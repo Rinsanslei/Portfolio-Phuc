@@ -14,6 +14,11 @@ footer p {
     margin-bottom: 32px;
 }
 
+.developer-tag {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 footer a {
     font-size: 14px;
     color: white;

@@ -1,12 +1,17 @@
-@media screen and (min-width:1440px) {
-    h1 {
-        font-size: 377px;
+@media screen and (min-width:660px) {
+    .projects ul li::before {
+        font-size: 22px;
+        top: 50%;
     }
 
-    .racoon {
-        max-width: 348px;
+
+    .projects ul li::after {
+        font-size: 14px;
+        max-width: 140px;
+        top: 55%;
     }
 }
+
 
 @media screen and (min-width:768px) {
     a {
@@ -21,7 +26,7 @@
         position: absolute;
         left: 100%;
         top: 60%;
-        transform: translate(-15%, -52%);
+        transform: translate(-12%, -52%);
     }
 
     .hero h2 {
@@ -30,13 +35,21 @@
 
     .about {
         display: grid;
-        grid-template-columns: 30% 1fr 1fr;
+        grid-template-columns: 35% auto 1fr;
+        column-gap: 5%;
     }
 
-    .description {
-        justify-self: end;
-        margin-right: 10%;
+    .img-container {
+        max-width: unset;
+        height: 90%;
+        width: 100%;
+        max-height: 625px;
     }
+
+    .img-container img {
+        height: 100%;
+    }
+
 
     .about h2 {
         position: absolute;
@@ -49,7 +62,7 @@
     }
 
     .about h3 {
-        font-size: 42px;
+        font-size: 54px;
     }
 
     .about p {
@@ -65,7 +78,7 @@
         grid-template-areas:
             "fo sk sm"
             "xp xp xp";
-        column-gap: 32px;
+        column-gap: 10%;
         row-gap: 80px;
     }
 
@@ -113,11 +126,11 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 32px;
-        column-gap: 64px;
+        column-gap: 5%;
     }
 
     .experiences ul li {
-        max-width: 480px;
+        max-width: 85%;
     }
 
     .projects {
@@ -142,16 +155,31 @@
     }
 }
 
-@media screen and (min-width:660px) {
-    .projects ul li::before {
-        font-size: 22px;
-        top: 50%;
+
+
+@media screen and (min-width:1440px) {
+    h1 {
+        font-size: 377px;
+    }
+
+    .racoon {
+        max-width: 348px;
+    }
+}
+
+
+@media screen and (min-width:1600px) {
+    h1 {
+        font-size: 377px;
     }
 
 
-    .projects ul li::after {
-        font-size: 14px;
-        max-width: 140px;
-        top: 55%;
+    .about h3 {
+        font-size: 70px;
+    }
+
+    .about p {
+        font-size: 22px;
+        max-width: 348px;
     }
 }
