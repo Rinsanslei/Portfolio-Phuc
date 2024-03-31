@@ -22,7 +22,7 @@ h1 {
 }
 
 .racoon {
-    transform: translate(-15%, -5%);
+    transform: translate(-12%, -4%);
     width: 34%;
 }
 
@@ -59,6 +59,7 @@ h1 {
     max-width: 320px;
     overflow: hidden;
     margin-bottom: 64px;
+    border-radius: 10px;
 }
 
 .img-container img {
@@ -74,10 +75,11 @@ h1 {
 }
 
 .about h3 {
+    font-weight: 500;
     font-family: "Helvetica Compressed", sans-serif;
     text-decoration: underline;
     color: #FFC700;
-    font-size: 34px;
+    font-size: 38px;
     margin-bottom: 24px;
 }
 

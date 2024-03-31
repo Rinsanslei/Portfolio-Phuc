@@ -14,13 +14,18 @@ footer p {
     margin-bottom: 32px;
 }
 
+.developer-tag {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 footer a {
     font-size: 14px;
     color: white;
 }
 
 .footer-links {
-    width: 33%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -40,6 +45,10 @@ footer a {
 
     footer p {
         margin-bottom: 0;
+    }
+
+    .footer-links {
+        width: 30%;
     }
 
     .footer-links img {
